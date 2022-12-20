@@ -15,11 +15,7 @@ def click_button(data):
 
 def click_count():
     if '=' not in display.get():
-        try:
-            display.insert(100, f' = {eval(display.get())}')
-        except:
-            clear()
-            display.insert(0, "Syntax Error")
+        display.insert(100, f' = {eval(display.get())}')
 
 
 def clear():
